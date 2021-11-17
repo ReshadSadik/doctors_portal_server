@@ -50,7 +50,6 @@ async function run() {
       const doctors = await cursor.toArray();
       res.json(doctors);
     });
-    console.log();
 
     app.post('/appointments', async (req, res) => {
       const appointment = req.body;
